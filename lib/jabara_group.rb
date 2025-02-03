@@ -18,7 +18,7 @@ module Enumerable
   # @return [Array<Array<Object>>]
   def jabara(n)
     raise ArgumentError.new('should be positive') if n <= 0
-    return [dup] if n == 1
+    return [to_a] if n == 1
 
     index, direction = 0, 1
     each_with_object(Array.new(n) { [] }) do |e, groups|

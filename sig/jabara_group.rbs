@@ -1,0 +1,7 @@
+module JabaraGroup
+  VERSION: String
+end
+
+module Enumerable[unchecked out Elem]
+  def jabara: (Integer n) -> Array[Array[Elem]]
+end
