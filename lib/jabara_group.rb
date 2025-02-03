@@ -37,4 +37,18 @@ module Enumerable
       index += direction
     end
   end
+
+  # Divides +self+ for +keys+.
+  #
+  # This method divides +self+ into +self.size+ groups and returns a +Hash+ with +keys+ as keys and groups as values.
+  #
+  #   ("a".."l").jabara_for(%w(A B C)) # => { "A" => ["a", "f", "g", "l"], "B" => ["b", "e", "h", "k"], "C" => ["c", "d", "i", "j"] }
+  #
+  # @param keys [Enumerable]
+  # @return [Hash<Object, Array<Object>>]
+  def jabara_for(keys)
+    keys_array = keys.to_a
+    groups = jabara(keys_array.size)
+    keys_array.zip(groups).to_h
+  end
 end
