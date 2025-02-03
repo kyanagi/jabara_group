@@ -4,4 +4,5 @@ end
 
 module Enumerable[unchecked out Elem]
   def jabara: (Integer n) -> Array[Array[Elem]]
+  def jabara_for: [T] (Enumerable[T]) -> Hash[T, Array[Elem]]
 end
