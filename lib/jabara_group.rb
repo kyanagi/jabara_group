@@ -17,7 +17,7 @@ module Enumerable
   # @param n [Integer] the number of groups
   # @return [Array<Array<Object>>]
   def jabara(n)
-    raise ArgumentError.new('should be positive') if n <= 0
+    raise ArgumentError.new("must be positive") if n <= 0
     return [to_a] if n == 1
 
     index, direction = 0, 1
