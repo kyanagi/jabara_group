@@ -1,6 +1,6 @@
 # JabaraGroup
 
-This gem add Enumerable#jabara(n) for jabara grouping.
+This gem add `Enumerable#jabara(n)` for jabara grouping.
 
 ```
 [*1..6].jabara(3) # => [[1, 6], [2, 5], [3, 4]]
